@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body{
+    background-color:white;
+}
+
+center {
+    border:solid 4px green;
+    position:absolute;
+    border-radius: 14px;
+    padding: 9px;
+    margin-top: -19px;
+    margin-left: 4px;
+    height: 144px;
+    width: 285px;
+}
+center b {
+    font-weight: 600;
+    color: green;
+    margin: 0px 0px 0px 0px;
+}
+
+center a {
+    background-color:green;
+    text-decoration:none;
+    color:black;
+    padding: 7px;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 21px;
+    margin: 8px -1px 0px -29px;
+    position: absolute;
+    text-align: center;
+}
+
+h2 {
+    color:green;
+    font-size: 29px;
+    margin: -2px 0px 12px 0px;
+}
+
+center a:hover {
+    background-color: rgb(248, 185, 126);
+	color : white;
+	transition : 0.4s;
+}

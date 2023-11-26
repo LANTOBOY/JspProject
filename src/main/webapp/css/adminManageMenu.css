@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+		list-style:none;
+		font-family: 'Noto Sans KR', sans-serif;
+		color : black;
+	}
+	#menulist
+	{	
+		padding-left : 0px;
+		display: flex;
+		width: 200px;
+		margin : 0 auto;
+		flex-direction : column;
+	}
+	#menulist > li{
+		width : 90%;
+		height : 20px;
+		padding : 15px 0px;
+		margin : 0 auto;
+		text-align : center;
+		
+	}
+	.line{
+		font-size : 18px;
+	}
+	
+	
+	.line:after {
+		display:block;
+		content: '';
+		border-bottom: solid 2px #539e53;  
+		border-radius: 30px;
+		transform: scaleX(0);  
+		transition: transform 250ms ease-in-out;
+		transform-origin:  0% 50%; 
+	}
+	.line:hover:after 
+	{ 
+		transform: scaleX(1); 
+	}

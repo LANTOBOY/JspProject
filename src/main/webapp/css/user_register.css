@@ -1,0 +1,175 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+*{
+    color: #000000;
+	text-decoration : none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+	height : 70%;
+}
+
+body {
+	position : relative;
+	width : 1200px;
+	height : 100%;
+	margin : 0 auto;
+}
+
+/* a 태그 li태그 밑줄, 점 없애기 */
+a {
+	text-decoration : none;
+	color : #000000;
+}
+ul{
+    list-style: none;
+    padding-left : 0px;
+}
+
+
+#logo{
+	position : relative;
+	display:flex;
+	width: 100%;
+	top: 80px;
+	justify-content: center;
+
+}
+#logo > a{
+	width: 20%;
+	height: 50px;
+	color: rgb(27, 226, 56);
+	font-size: 32px;
+
+	text-align: center;
+	font-weight: 800;
+}
+/* 회원가입 폼 css */
+#registerForm1{
+    position: relative;
+    width: 50%;
+    height: 400px;
+    margin : 0 auto;
+    top : 100px;
+    background-color: rgb(46, 204, 113);
+
+    border-radius: 12px;
+    box-shadow: 4px 5px 12px 0px grey;
+    
+    transition : 2s;
+}
+
+/* 회원가입 상단 타이틀 */
+.register-title-container{
+	display:flex;
+	align-items: center;
+	height : 20%;
+}
+/* 회원가입 타이틀 텍스트 */
+.register-title-container .title-login{
+	display: inline-block;
+	width: 100%;
+	color : white;
+	text-align: center;
+	font-weight: 800;
+	font-size: 2em;
+}
+/* 회원가입 타이틀 아이콘 */
+.register-title-container .title-icon{
+	position: absolute;
+	left: 30px;
+	width : 45px;
+	height: 45px;
+	transform: rotate(180deg);
+
+	filter: invert(100%) sepia(52%) saturate(2%) hue-rotate(351deg) brightness(100%) contrast(101%);
+}
+
+
+/* 회원가입 폼 콘텐츠 영역 */
+#register-content-container{
+	padding-top: 40px;
+	height : 80%;
+	
+}
+
+/* 아이콘과 입력텍스트 , 버튼을 담는 container */
+#register-content-container .input-container{
+	width : 90%;
+	display:flex;
+	margin : 0 auto;
+	margin-bottom: 15px;
+	align-items: center;
+	/* background-color: bisque; */
+
+}
+
+/* input-container내에 아이콘을 담는 container */
+.input-container .icon-container{
+	width: 15%;
+	display:flex;
+	justify-content: center;
+}
+/* input-container내에 edit텍스트와 버튼을 담음 */
+.input-container .etAndButton{
+	display:flex;
+	align-items: center;
+	width : 84%;
+}
+/* etAndButton 내에 edit텍스트 */
+.input-container .etAndButton input[type="tel"]{
+	display: inline-block;
+	width : 67%;
+	height : 45px;
+	padding-left: 10px;
+
+	font-size: 15px;
+	border : none;	
+	border-radius: 6px;
+}
+/* etAndButton 내에 버튼 */
+.input-container .etAndButton input[type="submit"]{
+	width : 25%;
+	height: 47px;
+	margin : 0 auto;
+
+	color : grey;
+	font-weight: 500;
+	background-color: white;
+
+	border : none;
+	border-radius: 6px;
+
+	cursor: pointer;
+	transition: 1s;
+}
+.input-container .etAndButton input[type="submit"]:hover{
+	background-color: rgb(248, 185, 126);
+	color : white;
+	transition : 0.4s;
+}
+#btn1:hover{
+	background-color: rgb(248, 185, 126);
+	color : white;
+	transition : 0.4s;
+}
+
+
+
+/* 첫 번째 아이콘을 가리킨다 */
+#icon1{
+	width : 50%;
+	height : 50%;
+	/* filter: invert(100%) sepia(52%) saturate(2%) hue-rotate(351deg) brightness(100%) contrast(101%); */
+}
+
+#verify_content{
+	opacity: 0;
+	transition: 1.5s;
+}
+
+
+
+

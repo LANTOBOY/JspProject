@@ -1,0 +1,381 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+*{
+    color: #000000;
+	text-decoration : none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+	height : 70%;
+}
+
+body {
+	position : relative;
+	width : 1200px;
+	height : 100%;
+	margin : 0 auto;
+}
+
+/* a 태그 li태그 밑줄, 점 없애기 */
+a {
+	text-decoration : none;
+	color : #000000;
+}
+ul{
+    list-style: none;
+    padding-left : 0px;
+}
+
+
+
+
+/* 로그인 폼 css */
+#loginForm{
+    position: relative;
+    width: 40%;
+    height: 952px;
+    margin : 0 auto;
+    top : 100px;
+    background-color: #2C3E52;
+    border-radius: 12px;
+    box-shadow: 4px 5px 12px 0px grey;
+}
+/* 로그인 텍스트 */
+#loginForm .title-login {
+    display: inline-block;
+    width: 100%;
+    margin: 46px 0px 70px 1px;
+    font-size: 2em;
+    text-align: center;
+    color : white;
+}
+
+
+
+
+
+/* 로그인 기능 폼 */
+#loginForm-container{
+    position: relative;
+    top: -6%;
+    left: 10%;
+    width : 85%;
+    height: 85%;
+}
+/* 아이콘을 담는 container */
+.icon-container{
+    display:inline-block;
+    width:10%;
+    height : 12%;
+    margin-right: 10px;
+    text-align: center;
+}
+/* 로그인폼 아이콘들 */
+.login-icon{
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    filter: invert(100%) sepia(52%) saturate(2%) hue-rotate(351deg) brightness(100%) contrast(101%);
+}
+/* 아이디 아이콘 */
+#icon1 {
+    width : 80%;
+    height : 80%;
+} 
+/* 비밀번호 아이콘 */
+#icon2 {
+    width : 80%;
+    height : 80%;
+} 
+/* input라인 별로 container */
+#loginForm-container .input-container{
+    display:flex;
+    align-items: center;
+    margin-top: 32px;
+}
+#loginForm-container .input-container input{
+    padding: 4px 8px 5px 8px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    margin: 0px 0px 14px 0px;
+}
+
+
+
+
+
+/* 회원가입 계정찾기 버튼 container */
+#loginForm-subButton{
+    width: 100%;
+    text-align: right;
+}
+/* 회원가입 계정찾기 텍스트 */
+#loginForm-subButton ul li {
+    display:inline-block;
+    margin-right: 5px;
+}
+#loginForm-subButton ul li .underbar-text{
+    color : white;
+}
+
+.underbar-text:after{
+    display:block;
+    content : '';
+    border-bottom: 2px solid white;
+    transform: scaleX(0);
+    transform-origin: 100% 0%;
+    transition : transform 250ms ease-in-out;
+}
+.underbar-text:hover:after{
+    transform: scaleX(1);
+}
+
+/* input : 아이디 입력 폼 */
+#loginForm-container input{
+    width: 85%;
+    height: 35px;
+    font-size: 14px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+*{
+    color: #000000;
+	text-decoration : none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+	height : 70%;
+}
+
+body {
+	position : relative;
+	width : 1200px;
+	height : 100%;
+	margin : 0 auto;
+}
+
+/* a 태그 li태그 밑줄, 점 없애기 */
+a {
+	text-decoration : none;
+	color : #000000;
+}
+ul{
+    list-style: none;
+    padding-left : 0px;
+}
+
+
+
+
+/* 회원가입 폼 css */
+#registerForm1{
+    position: relative;
+    width: 50%;
+    height: 400px;
+    margin : 0 auto;
+    top : 100px;
+    background-color: rgb(46, 204, 113);
+
+    border-radius: 12px;
+    box-shadow: 4px 5px 12px 0px grey;
+}
+
+/* 회원가입 상단 타이틀 */
+.register-title-container{
+	display:flex;
+	align-items: center;
+	height : 20%;
+}
+/* 회원가입 타이틀 텍스트 */
+.register-title-container .title-login{
+	display: inline-block;
+	width: 100%;
+	color : white;
+	text-align: center;
+	font-weight: 800;
+	font-size: 2em;
+}
+/* 회원가입 타이틀 아이콘 */
+.register-title-container .title-icon{
+	position: absolute;
+	left: 30px;
+	width : 45px;
+	height: 45px;
+	transform: rotate(180deg);
+
+	filter: invert(100%) sepia(52%) saturate(2%) hue-rotate(351deg) brightness(100%) contrast(101%);
+}
+
+
+/* 회원가입 폼 콘텐츠 영역 */
+#register-content-container{
+	padding-top: 40px;
+	height : 80%;
+	
+}
+
+/* 아이콘과 입력텍스트 , 버튼을 담는 container */
+#register-content-container .input-container{
+	width : 90%;
+	display:flex;
+	margin : 0 auto;
+	margin-bottom: 15px;
+	align-items: center;
+	/* background-color: bisque; */
+
+}
+
+/* input-container내에 아이콘을 담는 container */
+.input-container .icon-container{
+	width: 15%;
+	display:flex;
+	justify-content: center;
+}
+/* input-container내에 edit텍스트와 버튼을 담음 */
+.input-container .etAndButton{
+	align-items: center;
+	width : 84%;
+}
+/* etAndButton 내에 edit텍스트 */
+.input-container .etAndButton input[type="tel"]{
+	display: inline-block;
+	width : 67%;
+	height : 45px;
+	padding-left: 10px;
+
+	font-size: 15px;
+	border : none;	
+	border-radius: 6px;
+}
+/* etAndButton 내에 버튼 */
+.input-container .etAndButton input[type="button"]{
+	width : 25%;
+	height: 47px;
+	margin : 0 auto;
+
+	color : grey;
+	font-weight: 500;
+	background-color: white;
+
+	border : none;
+	border-radius: 6px;
+
+	cursor: pointer;
+	transition: 1s;
+}
+.input-container .etAndButton input[type="button"]:hover{
+	background-color: rgb(248, 185, 126);
+	color : white;
+	transition : 0.4s;
+}
+
+
+
+/* 첫 번째 아이콘을 가리킨다 */
+#icon1{
+	width: 50px;
+	height: 50px;
+	margin: -95px 0px 0px -38px;
+}
+
+/* 두 번째 아이콘을 가리킨다 */
+#icon2{
+	width: 50px;
+	height: 50px;
+	margin: -65px 0px 0px -38px;
+}
+
+#icon3{
+	width: 50px;
+	height: 50px;
+	margin: -13px 0px 0px -40px;
+}
+
+/* 두 번째 아이콘을 가리킨다 */
+#icon4{
+	width: 50px;
+	height: 50px;
+	margin: -83px 0px 0px -39px;
+}
+
+#verify_content{
+	opacity: 0;
+	transition: 1.5s;
+}
+
+div > span{
+	padding: 0px;
+	margin: 0px;
+	font-weight: 600;
+}
+
+
+div > span:last-child{
+	background:red;
+	padding:20px;
+	padding-bottom:100px;
+	padding-right:80px;
+	}
+
+*{
+		border-collapse: collapse;
+		margin:0px;
+		padding:0px;
+		text-decoration:none;
+		color:black;
+		list-style:none;
+		}
+		*{
+		list-style:none;
+		text-decoration:none;
+		border-collapse:collapse;
+		margin: 10px 0px 0px 0px;
+		padding:0px;
+		color:#000;
+}
+
+.header{
+	width:1280px;
+	margin:auto;
+	background:red;
+	
+}	
+.nav{
+	display:flex;
+	justify-content:flex-start;
+	width:calc(1280px - 300px);
+	background:blue;
+}			
+.nav{
+	display:flex;
+	justify-content:flex-end;
+	line-height:86px;
+	
+	
+	
+}
+
+.submitButton #icon5 {width: 45px;height: 45px;color: green;}
+
+.submitButton button {
+	position: absolute;
+	margin: 32px 0px 0px 171px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.etAndButton textarea {
+	width: 285px;
+	height: 164px;
+	border: none;
+	outline: none;
+	border-radius: 7px;
+	padding: 8px 0px 0px 11px;
+}
+
+.etAndButton #idcheck {position: absolute;width: 76px;height: 39px;left: 294px;top: 12px;}
